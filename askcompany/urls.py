@@ -13,8 +13,17 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path, include
+
+
+# django의 global settings에 setting.py의 custom settings가 override 되어야 하기 때문에
+# from django.conf 의 settings를 이용해야 한다.
+# from django.conf import global_settings
+# from askcomapny import settings
+
+from django.conf import settings
 
 
 urlpatterns = [
@@ -22,3 +31,7 @@ urlpatterns = [
     path('instagram/', include('instagram.urls')),
 
 ]
+
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL,
+                          document_root=settings.MEDIA_ROOT)

@@ -7,9 +7,10 @@
   "settings": {
     "python.pythonPath": "/Users/wonhak/.virtualenvs/django_askcompany/bin/python",
     "python.linting.lintOnSave": true,
-    "python.linting.enabled": true,
-    "python.linting.pep8Enabled": true,
+    "python.linting.enabled": false,
+    // "python.linting.pep8Enabled": true,
     "python.linting.pylintEnabled": true,
+    "python.jediEnabled": false,
     "files.exclude": {
       "**/*.pyc": true
     }
