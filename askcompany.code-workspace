@@ -1,0 +1,17 @@
+{
+  "folders": [
+    {
+      "path": "."
+    }
+  ],
+  "settings": {
+    "python.pythonPath": "/Users/wonhak/.virtualenvs/django_askcompany/bin/python",
+    "python.linting.lintOnSave": true,
+    "python.linting.enabled": true,
+    "python.linting.pep8Enabled": true,
+    "python.linting.pylintEnabled": true,
+    "files.exclude": {
+      "**/*.pyc": true
+    }
+  }
+}
